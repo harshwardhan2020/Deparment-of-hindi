@@ -76,6 +76,16 @@
       .admission-banner p {
         font-size: 1rem;
       }
+      .faculty-table-wrapper table {
+        font-size: 0.98rem;
+      }
+    }
+    /* Responsive table for mobile */
+    .faculty-table-wrapper {
+      overflow-x: auto;
+    }
+    .faculty-table-wrapper table {
+      min-width: 500px;
     }
   </style>
 </head>
@@ -126,29 +136,32 @@
   <!-- OUR FACULTY section -->
   <div style="max-width:600px;margin:2rem auto 0 auto;padding:1.5rem;background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);color:#222;">
     <h2 style="text-align:center;margin-top:0;font-size:1.4rem;letter-spacing:1px;color:#c62828;">Our Faculty</h2>
-    <table style="width:100%;border-collapse:collapse;font-size:1.05rem;">
-      <thead>
-        <tr style="background:#fff3e0;">
-          <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Name</th>
-          <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Qualification</th>
-          <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Designation</th>
-          <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Subject</th>
-        </tr>
-      </thead>
-      <tbody><tr>
-          <td style="padding:0.5em;">Dr. Smt. Vandana Prakash Patil</td>
-          <td style="padding:0.5em;">M. A.,B.Ed., M. Phil., Ph. D.</td>
-          <td style="padding:0.5em;">Assistant Professor</td>
-          <td style="padding:0.5em;">Hindi</td>
-        </tr>
-        <tr>
-          <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">Smt. Snehalata Gautam Kamble</td>
-          <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">M. A., B.Ed., M. Phill.</td>
-          <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">Assistant Professor</td>
-          <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">Hindi</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="faculty-table-wrapper">
+      <table style="width:100%;border-collapse:collapse;font-size:1.05rem;">
+        <thead>
+          <tr style="background:#fff3e0;">
+            <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Name</th>
+            <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Qualification</th>
+            <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Designation</th>
+            <th style="padding:0.5em;border-bottom:1px solid #eee;text-align:left;">Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:0.5em;">Dr. Smt. Vandana Prakash Patil</td>
+            <td style="padding:0.5em;">M. A.,B.Ed., M. Phil., Ph. D.</td>
+            <td style="padding:0.5em;">Assistant Professor</td>
+            <td style="padding:0.5em;">Hindi</td>
+          </tr>
+          <tr>
+            <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">Smt. Snehalata Gautam Kamble</td>
+            <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">M. A., B.Ed., M. Phill.</td>
+            <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">Assistant Professor</td>
+            <td style="padding:0.5em;border-bottom:1px solid #f3f3f3;">Hindi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </body>
 </html>
